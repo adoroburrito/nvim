@@ -22,3 +22,7 @@ require("indent_blankline").setup {
   buftype_exclude = {"terminal"}
 }
 
+vim.g["coc_disable_transparent_cursor"] = 1
+
+require("bufferline").setup{}
+

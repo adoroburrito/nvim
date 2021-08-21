@@ -69,6 +69,10 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/Users/nog/.local/share/nvim/site/pack/packer/start/bufferline.nvim"
+  },
   ["coc.nvim"] = {
     loaded = true,
     path = "/Users/nog/.local/share/nvim/site/pack/packer/start/coc.nvim"
@@ -80,6 +84,10 @@ _G.packer_plugins = {
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/Users/nog/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/Users/nog/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
   },
   ["one-nvim"] = {
     loaded = true,
