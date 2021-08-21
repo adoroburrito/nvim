@@ -22,5 +22,10 @@ return require('packer').startup(function()
 
   use 'lukas-reineke/indent-blankline.nvim'
 
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
 end)
 
