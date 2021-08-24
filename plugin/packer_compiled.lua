@@ -81,6 +81,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/nog/.local/share/nvim/site/pack/packer/start/indentLine"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/Users/nog/.local/share/nvim/site/pack/packer/start/lualine.nvim"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/Users/nog/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
