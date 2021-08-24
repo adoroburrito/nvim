@@ -77,9 +77,9 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/nog/.local/share/nvim/site/pack/packer/start/coc.nvim"
   },
-  ["indent-blankline.nvim"] = {
+  indentLine = {
     loaded = true,
-    path = "/Users/nog/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim"
+    path = "/Users/nog/.local/share/nvim/site/pack/packer/start/indentLine"
   },
   ["nvim-treesitter"] = {
     loaded = true,

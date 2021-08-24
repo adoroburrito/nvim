@@ -14,11 +14,13 @@ map("n", "<Leader>ff", "<cmd>Telescope find_files<cr>")
 map("n", "<Leader>fb", "<cmd>Telescope buffers<cr>")
 
 -- coc.nvim
--- TO-DO: refactor this to lua
-cmd("nmap <silent> gd <Plug>(coc-definition)")
-cmd("nmap <silent> gy <Plug>(coc-type-definition)")
-cmd("nmap <silent> gi <Plug>(coc-implementation)")
-cmd("nmap <silent> gr <Plug>(coc-references)")
+map("n", "gd", "<Plug>(coc-definition)", { expr = false, noremap = false })
+map("n", "gy", "<Plug>(coc-type-definition)", { expr = false, noremap = false })
+map("n", "gi", "<Plug>(coc-implementation)", { expr = false, noremap = false })
+map("n", "gr", "<Plug>(coc-references)", { expr = false, noremap = false })
+
+map("n", "<Leader>rn", "<Plug>(coc-rename)", { expr = false, noremap = false })
+map("x", "<Leader>ca", "<Plug>(coc-codeaction-selected)", { expr = false, noremap = false })
 
 function esc(cmd)
   return vim.api.nvim_replace_termcodes(cmd, true, false, true)
@@ -47,7 +49,7 @@ _G.nog.completion = completion
 
 map("i", "<TAB>", "v:lua.nog.completion.tab_completion()", { expr = true, noremap = false })
 map("i", "<S-TAB>", 'pumvisible() ? "<C-p>" : "<C-h>"', { expr = true, noremap = false })
-map("i", "<CR>", 'pumvisible() ? coc#_select_confirm() : "<C-g>u<CR><C-r>=coc#on_enter()<CR>"', { expr = true, noremap = false })
+cmd('inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\\<C-g>u\\<CR>\\<c-r>=coc#on_enter()\\<CR>"')
 
 -- bufferLine.nvim
 local bufferLine = {

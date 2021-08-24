@@ -20,8 +20,6 @@ return require('packer').startup(function()
     branch = 'release'
   }
 
-  use 'lukas-reineke/indent-blankline.nvim'
-
   use {
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
@@ -31,6 +29,8 @@ return require('packer').startup(function()
     'akinsho/bufferline.nvim', 
     requires = 'kyazdani42/nvim-web-devicons'
   }
+
+  use 'Yggdroot/indentLine'
 
 end)
 
