@@ -8,6 +8,10 @@ vim.o.shiftwidth = 2
 
 vim.o.updatetime = 300
 
+vim.cmd('colorscheme one-nvim')
+
+vim.o.guifont = "JetBrainsMono Nerd Font:h18"
+
 vim.g["netrw_banner"] = 0
 vim.g["netrw_liststyle"] = 3
 vim.g["netrw_altv"] = 1
@@ -17,6 +21,13 @@ vim.o.background = 'light'
 vim.cmd('colorscheme one-nvim')
 
 vim.g["coc_disable_transparent_cursor"] = 1
+
+vim.g["neovide_cursor_vfx_mode"] = "railgun"
+vim.g["neovide_cursor_antialiasing"] = true
+vim.g["neovide_cursor_vfx_opacity"] = 255.0
+vim.g["neovide_cursor_vfx_particle_lifetime"] = 1
+vim.g["neovide_cursor_vfx_particle_density"] = 50
+vim.g["neovide_cursor_vfx_particle_speed"] = 1
 
 require("bufferline").setup{}
 require("lualine").setup {

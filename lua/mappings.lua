@@ -9,6 +9,12 @@ local function map(mode, lhs, rhs, opts)
   }))
 end
 
+-- exit terminal with esc
+map("t", "<esc>", "<C-\\><C-n>")
+
+-- netrw
+map("n", "<Leader><C-n>", ":Lexplore<cr>")
+
 -- telescope
 map("n", "<Leader>ff", "<cmd>Telescope find_files<cr>")
 map("n", "<Leader>fb", "<cmd>Telescope buffers<cr>")
